@@ -7,8 +7,10 @@ print(1 / 3)
 print(1 // 3)  # division entera
 print(1 % 3)  # resto de la division
 print(1 ** 3)  # potencia
+print(9**0.5)  # raiz cuadrada
 
 print(round(1.5))  # redondeo
+print(round(1.5, 1))  # redondeo con un decimal
 print(abs(-1.5))  # valor absoluto
 
 print(math.ceil(1.5))  # redondeo hacia arriba

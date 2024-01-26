@@ -1,24 +1,27 @@
-
 # las llaves tienen que ser strings
 punto = {
     "x": 10,
     "y": 20
 }
 
+# acceder a los elementos
 print(punto["x"])
 print(punto["y"])
+print(punto.keys())  # devuelve las llaves
+print(punto.values())  # devuelve los valores
+print(punto.items())  # devuelve las llaves y los valores
 
-# agregar un nuevo elemento
+# agregar o modificar elementos
 punto["z"] = 30
+
+# elimina la llave x y su valor
+del punto["x"]
 
 if "z" in punto:
     print("Si esta en el diccionario")
 
 
 print(punto.get("a", 0))  # si no existe la llave, devuelve 0
-
-
-del punto["x"]  # elimina la llave x y su valor
 
 
 for key in punto:

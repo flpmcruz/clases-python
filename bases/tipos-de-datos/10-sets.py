@@ -1,4 +1,3 @@
-
 primer = set([1, 2, 3, 4, 5])
 segundo = {1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
@@ -7,10 +6,15 @@ print(segundo)
 
 # Operaciones con conjuntos
 primer.add(11)
-primer.remove(1)
+primer.remove(1)  # elimina el elemento si existe o lanza una excepcion
+primer.discard(1)  # elimina el elemento si existe
+primer.clear()  # vacia el conjunto
+primer.pop()  # elimina un elemento aleatorio y lo retorna
+len(primer)  # longitud del conjunto
 
 union = primer | segundo  # une los conjuntos
-print(union)
+union2 = primer.union(segundo)
+print(union2)
 
 interseccion = primer & segundo  # elementos en comun
 print(interseccion)

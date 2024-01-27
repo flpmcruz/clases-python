@@ -23,3 +23,16 @@ print(nombres2)
 
 nombres3 = list(map(lambda usuario: usuario[0], usuarios))
 menosUsuarios = list(filter(lambda usuario: usuario[1] % 2 == 0, usuarios))
+
+# Si tiene else va antes del for
+lista = [n if n % 2 == 0 else "No es par" for n in range(0, 11)]
+print(lista)
+
+# Si no tiene else va despues del for
+valores = [1, 2, 3, 4, 5, 6, 9.5]
+valores_pares = [n for n in valores if n % 2 == 0]
+
+
+pies = [10, 20, 30, 40, 50]
+metros = [pie * 0.3048 for pie in pies]
+print(metros)

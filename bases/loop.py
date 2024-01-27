@@ -1,6 +1,10 @@
+nombres = ["Juan", "Karla", "Ricardo", "María"]
+for nombre in nombres:
+    print(nombre)
 
-# for numero in range(5):
-#     print(numero)
+for nombre in enumerate(nombres):
+    print(nombre)  # Imprime tuplas con indice y valor
+
 
 buscar = 3
 for numero in range(5):

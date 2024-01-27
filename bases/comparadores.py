@@ -1,6 +1,9 @@
 """ Operadores de comparacion"""
 edad = 60
 
+# Operadores de comparacion
+# ==, !=, <, >, <=, >=
+
 if edad >= 54:
     print("Puedes ver la pelicula con descuento")
 elif edad > 17:
@@ -20,3 +23,16 @@ if gas and encendido:
     print("Puedes avanzar")
 
 print("Fin del programa")
+
+
+serie = "N-02"
+
+match serie:
+    case "N-01":
+        print("Es la serie 1")
+    case "N-02":
+        print("Es la serie 2")
+    case "N-03":
+        print("Es la serie 3")
+    case _:
+        print("No es ninguna serie")

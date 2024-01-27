@@ -71,3 +71,12 @@ usuarios2.sort(key=ordenar_por_edad)
 
 # lo mismo que la función anterior pero usando una función lambda
 usuarios2.sort(key=lambda usuario: usuario[1])
+
+
+# Zip: crea una lista de tuplas a partir de dos listas o más listas
+
+nombres = ["Juan", "Pedro", "Luis", "Ana"]
+edades = [20, 25, 30, 35]
+
+combinados = list(zip(nombres, edades))
+# [("Juan", 20), ("Pedro", 25), ("Luis", 30), ("Ana", 35)]

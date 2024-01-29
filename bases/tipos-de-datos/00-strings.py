@@ -50,4 +50,5 @@ print(NOMBRE.swapcase())  # cambiar mayusculas por minusculas y viceversa
 
 print(NOMBRE.strip())  # quitar espacios en blanco al inicio y al final
 print(NOMBRE.lstrip())  # quitar espacios en blanco al inicio
+print(NOMBRE.lstrip("J"))  # quitar J al inicio
 print(NOMBRE.rstrip())  # quitar espacios en blanco al final
